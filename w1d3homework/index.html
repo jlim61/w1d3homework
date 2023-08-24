@@ -9,11 +9,24 @@
 <body>
     <div class="main">
         <p class="jane-chat">Chatting with Jane Doe</p>
-        <div><img class="man-image" src="./man.JPG" alt=""></div>
+        <div>
+            <div class="man-image"><div>
+                <img class="jane-image" src="jane.JPG" alt="A picture of Jane">
+                <p class="jane-circle">Jane</p>
+                <div class="call-functions">
+                    <p class="mic-container"><img class="call-icons mic-icon" src="mic.png" alt="A mic icon"></p>
+                    <p class="camera-container"><img class="call-icons camera-icon" src="camera.png" alt="A camera icon"></p>
+                    <p class="cast-container"><img class="call-icons cast-icon" src="cast.png" alt="A cast icon"></p>
+                    <p class="phone-container"><img class="call-icons phone-icon" src="phone2.png" alt="A phone icon"></p>
+                </div>
+            </div>
+        </div>
+            <!-- <img class="man-image" src="./man.JPG" alt=""> -->
+        </div>
         <div class="chat-log">
             <div class="chat-top">
-                <p class="chat-participant">Chat</p>
-                <p class="chat-participant">Participant</p>
+                <p class="chat-participant chat-circle">Chat</p>
+                <p class="chat-participant participant-circle">Participant</p>
             </div>
             <div class="chat-middle">
                 <div class="chat-message chat-you">
@@ -33,7 +46,7 @@
                 </div>
             </div>
             <div class="chat-bottom">
-                <input class="chat-send" type="text" placeholder="Say something...">
+                <input class="chat-send" type="text" placeholder="Say something..." style="font-size: large;">
                 <img class="send-button" src="./plane2.JPG" alt="">
             </div>
         </div>
