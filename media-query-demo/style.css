@@ -1,0 +1,173 @@
+body {
+    font-family: 'Arial', sans-serif; /* Arial has '' but sans-serif doesn't because it is generic name vs family name */
+    margin: 40px;
+}
+
+/* Default Styles */
+
+header{
+    background-color: lightgrey;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 0;
+
+}
+
+main p {
+    font-size: 16px;
+    color: black;
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2,1fr);
+
+}
+
+.grid-container > div {
+    padding: 20px;
+    border: 1px solid black;
+    text-align: center;
+    background-color: lightyellow;
+}
+
+/* FLEXBOX PROFILE SECTION */
+
+.flex-profile {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.profile-info h2 {
+    margin: 0;
+    color: darkblue;
+}
+
+.profile-info p{
+    margin-top: 5px;
+    color: darkgray;
+}
+
+/* MOBILE LANDSCAPE */
+
+@media (max-width: 767px) {  /* The styles in this block are only going to be applied when at the screen size of 767px */
+    main p {
+        font-size: 18px;
+        color: blue;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-li {
+        padding: 8px;
+        font-size: 18px;
+    }
+
+    .flex-profile {
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 20px;
+        padding: 20px 0px;
+    }
+
+    .grid-container > div {
+        padding: 30px 0px;
+    }
+
+    header {
+        font-size: 22px;
+    }
+}
+
+/* TABLET LANDSCAPE */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    main p {
+        font-size: 20px;
+        color: green;
+    }
+
+    header {
+        font-size: 25px;
+    }
+
+    nav ul {
+        font-size: 18px;
+        padding: 10px 0px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, fr);
+        column-gap: 20px;
+        row-gap: 20px;
+        padding: 20px 0px;
+    }
+
+    .grid-container > div {
+        padding: 25px 0px;
+    }
+
+    .flex-profile {
+        padding: 10px;
+    }
+}
+
+/* DESKTOP LANDSCAPE */
+
+@media (min-width: 1024px) {
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+    }
+
+    nav ul {
+        justify-content: space-evenly;
+        font-size: 22px;
+    }
+
+    main p {
+        font-size: 22px;
+        color: purple;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-container > div {
+        padding: 30px 0px;
+        font-size: 18px;
+    }
+
+    .flex-profile {
+        padding: 20px;
+    }
+}
+
+
+
+/*  */

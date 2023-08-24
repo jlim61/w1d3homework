@@ -1,0 +1,84 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* By making 1fr, it makes that many even columns */
+    grid-template-rows: 1fr 1fr 1fr 1fr; /* By making 1fr, it makes that many even rows */
+    grid-template-areas:
+    "area-one area-two area-three"
+    "area-four area-five area-six"
+    "area-seven area-eight area-nine"
+    "area-ten area-eleven area-twelve"
+    ;
+}
+
+@media (max-width: 380px) {
+    .container {
+            display: grid;
+    grid-template-columns: 1fr 1fr; /* By making 1fr, it makes that many even columns */
+    grid-template-rows: 1fr 1fr 1fr 1fr; /* By making 1fr, it makes that many even rows */
+    grid-template-areas:
+    "area-one area-two"
+    "area-three area-four"
+    "area-five area-six"
+    "area-seven area-eight"
+    "area-nine area-ten"
+    "area-eleven area-twelve";
+    gap: 2px 5px; /* Same thing as two lines below combined */
+    /* row-gap: 2px;
+    column-gap: 5px; */
+    }
+}
+
+.one {
+    grid-area: area-one
+}
+
+.two {
+    grid-area: area-two
+}
+
+.three {
+    grid-area: area-three
+}
+
+.four {
+    grid-area: area-four
+}
+
+.five {
+    grid-area: area-five
+}
+
+.six {
+    grid-area: area-six
+}
+
+.seven {
+    grid-area: area-seven
+}
+
+.eight {
+    grid-area: area-eight
+}
+
+.nine {
+    grid-area: area-nine
+}
+
+.ten {
+    grid-area: area-ten
+}
+
+.eleven {
+    grid-area: area-eleven
+}
+
+.twelve {
+    grid-area: area-twelve
+}
+
+/*  */

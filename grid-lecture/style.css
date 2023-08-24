@@ -1,0 +1,101 @@
+body{
+  background-color: black;
+  color:white;
+}
+
+body{
+    padding: 5px;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "nav nav nav nav"
+    "hero hero hero hero"
+    "main main . sidebar"
+    "footer-img f-two f-three f-four";
+    row-gap: 10px;
+}
+
+@media (max-width: 380px) {
+    body{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+        "nav nav nav"
+        "hero hero hero"
+        "main main main"
+        "f-two f-three f-four";
+    }
+    .responsive-hide {
+        display: none;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .hero::after {
+        content:url(https://picsum.photos/360)
+    }
+}
+
+header{
+    grid-area: nav;
+}
+
+.flex-end {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 0 8%;
+}
+
+.hero{
+    grid-area: hero;
+    text-align: center;
+    position: relative;
+}
+
+.absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) /* The natural starting point of the text is the start of the text. This moves the starting point to the middle of the text */
+}
+
+main{
+    grid-area: main;
+    padding: 0 8%;
+}
+
+.sidebar{
+    grid-area: sidebar;
+}
+
+.f-one{
+    grid-area: footer-img;
+}
+
+.f-two{
+    grid-area: f-two;
+}
+
+.f-three{
+    grid-area: f-three;
+}
+
+.f-four{
+    grid-area: f-four;
+}
+
+.flexbox-stretch {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+
+/*  */

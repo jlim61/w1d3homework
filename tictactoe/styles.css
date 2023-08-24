@@ -1,0 +1,55 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "area-one area-two area-three"
+    "area-four area-five area-six"
+    "area-seven area-eight area-nine"
+    ;
+}
+
+
+#box1 {
+    grid-area: area-one
+}
+
+#box2 {
+    grid-area: area-two
+}
+
+#box3 {
+    grid-area: area-three
+}
+
+#box4 {
+    grid-area: area-four
+}
+
+#box5 {
+    grid-area: area-five
+}
+
+#box6 {
+    grid-area: area-six
+}
+
+#box7 {
+    grid-area: area-seven
+}
+
+#box8 {
+    grid-area: area-eight
+}
+#box9 {
+    grid-area: area-nine
+}
+
+div p {
+    text-align: center;
+}
