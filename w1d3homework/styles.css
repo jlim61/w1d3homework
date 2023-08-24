@@ -27,7 +27,7 @@ body {
 /* CALLER SECTION */
 
 .man-image {
-    background-image: URL(/man.JPG);
+    background-image: url(man.JPG);
     grid-area: call;
     /* margin-bottom: 50px; */
     /* border: 2px solid black; */
